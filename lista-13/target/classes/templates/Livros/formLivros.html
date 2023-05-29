@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org"
+	  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+	<title>Adicionar Livros</title>
+</head>
+<body>
+	<h2>
+		Cadastro de Livros
+	</h2>
+	<form method="post">
+		Título: <input type="text" value="" name="titulo"/> <br>
+		<br>
+		Autor: <input type="text" value="" name="autor"/> <br>
+		<br>
+		Editora: <input type="text" value="" name="editora"/> <br>
+		<br>
+        Ano de Publicação: <input type="number" name="publicacao" min="1900" max="2099" step="1"/> <br>
+        <br>
+        ISBN: <input type="text" value="" name="isbn" pattern="\d{10}|\d{13}" title="Por favor, insira um número ISBN de 10 ou 13 dígitos."/> <br>
+        <br>
+        
+        <button  type="submit">Salvar</button>
+	
+	</form>
+</body>
+</html>

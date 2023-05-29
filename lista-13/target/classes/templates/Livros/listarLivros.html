@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org"
+	  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head> 
+	<title>Livraria Digital</title>
+</head>
+<body>	
+	<h3>Livros Cadastrados</h3>	
+	<p>	Título&emsp;Autor&emsp;Editora&emsp;Publicação&emsp;ISBN 	</p>	
+	<hr>	
+	<div th:each="livro : ${livros}">		
+		<div class="row">				
+			 <p>
+				<span th:text="${livro.titulo}"></span> &emsp;
+			 	<span th:text="${livro.autor}"></span> &emsp;
+			 	<span th:text="${livro.editora}"></span> &emsp;
+			 	<span th:text="${livro.publicacao}"></span> &emsp;
+			 	<span th:text="${livro.isbn}"></span> &emsp;			 	
+			 </p>
+		</div>
+	</div>
+</body>
+</html>
